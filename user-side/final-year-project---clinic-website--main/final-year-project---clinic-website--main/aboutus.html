@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="C:\Users\HP\Desktop\PFE\code\script.js"></script>
+</head>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --green:#1b6bff;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background: #f5f5f5;
+}
+
+.heading{
+    margin-top: 80px;
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+
+.heading span{
+    text-transform: uppercase;
+    color:var(--green);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border:var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    background: #fff;
+}
+
+.btn span{
+    padding:.7rem 1rem;
+    border-radius: .5rem;
+    background: var(--green);
+    color:#fff;
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: var(--green);
+    color:#fff;
+}
+
+.btn:hover span{
+    color: var(--green);
+    background:#fff;
+    margin-left: 1rem;
+}
+
+.header{
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  white;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: #1b6bff;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color: var(--green);
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+    .about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.about .row .content p{
+    color: var(--light-color);
+    padding:1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+</style>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare </a>
+
+    <nav class="navbar">
+        <a href="#home">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#about">Medecins</a>
+        <a href="#doctors">Articles</a>
+        <a href="#book">RDV</a>
+        <a href="#review">feedback</a>
+        <a href="#blogs"> A propos</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> a propos </span> de nous </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="https://st2.depositphotos.com/1518767/10220/i/950/depositphotos_102206980-stock-photo-doctor-examining-a-x-ray.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Qui sommes-nous?</h3>
+            <p>
+                Clinique MedCare est un établissement de santé privé inauguré en 2021 et qui s'est aisément distinguée par son savoir-faire et son aptitude à entendre les vœux de sa nombreuse clientèle.
+                
+                La disponibilité d'un plateau technique performant et d'une équipe soignante à la compétence reconnue  : acceuil, qualité des soins , tarifs et disponibilité expliquent sans doute le succès de cette véritable institution.
+                
+                "Nous mettons un point d'honneur à vous prendre en charge "
+                
+                La diversification des préstations est un pilier essentiel à la prise en charge médico-chirurgicale. Notre service d'hospitalisation assure ses soins dans plusieurs disciplines chirurgicales: Chirurgie viscérale et oncologique ,Chirurgie orthopédique-traumatologie,chirurgie pédiatrique, Urologie, Neurochirurgie O.R.L et Ophtalmologie ainsi que médicales: médecine interne ,anesthesie-réanimation pneumologie,pédiatrie , cardiologie, gastro-entérolgie et hépatologie avec un service d'imagerie medicale et un un laboratoire d'analyses medicales a la pointe de la technologie  ce qui consacre une prise en charge multidisciplinaire aussi efficace que fiable , un service de gynécologie et d'obstétrique exclusif ouvre la porte en permanence à tous les femmes désirant ètre considérées comme exclusives
+                
+                Nous faisons de notre possible pourvus que le client ait pleine satisfaction.</p>
+<p>Sur notre site internet, vous trouverez toutes les informations qui vous permettront de connaître notre clinique, de trouver notre place, de choisir votre médecin, de prendre des rendez-vous et de suivre à distance.</p>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="footer">
+ 
+    <div class="box-container">
+  
+  
+        <div class="box">
+            <h3>contact info</h3>
+             
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> amoudjar5@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> boutheinabenyamina123@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Ain Defla - Algeria </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>PFE, groupe 04</span> | all rights reserved </div>
+
+</section>
+</body>
+</html>
